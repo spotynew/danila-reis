@@ -42,3 +42,8 @@
 .testimonials-note{text-align:center;max-width:700px;margin:31px auto 0;font-size:11px;line-height:1.8;color:var(--sub)}
 @media(max-width:740px){.testimonials-intro{margin-bottom:35px}.testimonials-grid{grid-template-columns:1fr;gap:19px}.testimonial-card{padding:25px}.testimonial-intro h2{font-size:48px}.testimonial-person h3{font-size:31px}.testimonial-avatar{height:76px;width:76px;flex-basis:76px}.testimonial-card blockquote{font-size:27px}}
 @media(max-width:470px){.testimonial-card{padding:22px}.testimonial-top{gap:13px}.testimonial-person h3{font-size:27px}.testimonial-person p{font-size:9px}.testimonials-intro h2{font-size:43px}.testimonial-card blockquote{font-size:25px}}
+
+/* Navegação e acesso à página de trajetória */
+.profile-links{display:flex;gap:25px;flex-wrap:wrap;align-items:center}
+@media(max-width:1120px){.site-header .menu-toggle{display:block}.site-nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);box-shadow:0 15px 30px #113f3d11;flex-direction:column;align-items:stretch;padding:20px 6% 25px;gap:0}.site-nav.is-open{display:flex}.site-nav>a{padding:13px 8px;font-size:13px}.site-nav .nav-cta{margin:10px 0 0;text-align:center}}
+@media(max-width:470px){.profile-links{align-items:flex-start;flex-direction:column;gap:17px}}

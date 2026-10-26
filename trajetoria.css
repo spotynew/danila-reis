@@ -1,0 +1,64 @@
+
+/* Página Trajetória & Formação — herda a identidade visual do site principal */
+.curriculum-page{background:var(--cream)}
+.curriculum-page .site-nav [aria-current="page"]{color:#9b7e52;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.cv-hero{background:var(--paper);overflow:hidden}
+.cv-hero-layout{display:grid;grid-template-columns:1.08fr .92fr;gap:7%;align-items:center;padding-top:68px;padding-bottom:75px}
+.cv-hero-copy h1{max-width:790px;font-size:clamp(61px,6.2vw,99px);margin:0 0 29px}
+.cv-hero-copy h1 em{color:var(--teal)}
+.cv-lead{max-width:635px;font-size:16px;line-height:1.9;color:var(--deep);margin-bottom:18px}
+.cv-summary{max-width:625px;font-size:13px;line-height:2;color:var(--sub);margin-bottom:35px}
+.cv-hero-actions{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+.cv-hero-image{position:relative;height:min(610px,63vw);min-height:470px;overflow:hidden;border-radius:280px 280px 7px 7px;background:#d3d9d0}
+.cv-hero-image img{width:100%;height:100%;object-fit:cover;object-position:50% 32%}
+.cv-hero-image:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(7,40,38,.5));pointer-events:none}
+.cv-image-mark{position:absolute;bottom:27px;left:28px;z-index:1;font:400 31px/1 'Cormorant Garamond',Georgia,serif;color:#fff;letter-spacing:.09em}
+.cv-image-mark span{display:block;font:500 9px/1.8 Montserrat,Arial,sans-serif;letter-spacing:.2em;color:#efe0c3;margin-top:7px}
+.cv-numbers{background:var(--pine);color:var(--cream)}
+.cv-numbers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding-top:38px;padding-bottom:41px}
+.cv-numbers-grid>div{padding:4px 20px 3px 0}
+.cv-numbers-grid>div+div{border-left:1px solid #ffffff40;padding-left:32px}
+.cv-numbers strong{display:block;font:400 clamp(40px,4.1vw,60px)/1 'Cormorant Garamond',Georgia,serif;color:#f2e6ce}
+.cv-numbers span{display:block;font-size:11px;line-height:1.85;color:#d6e1d7;margin-top:9px;max-width:290px}
+.cv-purpose{background:var(--cream)}
+.cv-purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:14%;align-items:center}
+.cv-purpose-grid h2{margin:0}
+.cv-purpose-text{border-left:1px solid var(--gold);padding:7px 0 7px 30px}
+.cv-purpose-text p{font:400 clamp(31px,3vw,45px)/1.23 'Cormorant Garamond',Georgia,serif;color:var(--deep)}
+.cv-purpose-text span{display:block;font-size:9px;letter-spacing:.16em;color:#9b8059;margin-top:22px}
+.cv-education{background:var(--paper)}
+.cv-section-head{max-width:790px;margin-bottom:51px}
+.cv-section-head h2{margin-bottom:18px}
+.cv-section-head>p:last-child{font-size:13px;line-height:2;color:var(--sub);max-width:620px}
+.cv-education-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:23px}
+.cv-education-card{min-height:280px;background:var(--cream);border:1px solid rgba(182,154,106,.32);padding:36px 27px;display:flex;flex-direction:column}
+.cv-kicker{font-size:10px;color:#9b8059;letter-spacing:.14em;margin-bottom:44px}
+.cv-education-card h3{font-size:clamp(28px,3vw,38px);margin:0 0 24px}
+.cv-education-card p{margin-top:auto;padding-top:17px;border-top:1px solid var(--stroke);font-size:11px;line-height:1.9;color:var(--sub)}
+.cv-specialties{background:#103b39;color:#fff}
+.cv-specialties-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:12%;align-items:start}
+.cv-specialties-lead{position:sticky;top:50px}
+.cv-specialties-lead h2 em{color:#dfcaa4}
+.cv-specialties-lead>p:last-child{color:#d8e4dd;font-size:13px;line-height:2;max-width:480px;margin-top:23px}
+.cv-specialties-list article{display:grid;grid-template-columns:30px 1fr;gap:18px;padding:25px 0;border-bottom:1px solid #ffffff35}
+.cv-specialties-list article:first-child{padding-top:8px}
+.cv-specialties-list article>span{font:italic 20px 'Cormorant Garamond',Georgia,serif;color:#d9c49a}
+.cv-specialties-list h3{font-size:30px;color:#fff;margin:0 0 9px}
+.cv-specialties-list p{font-size:12px;line-height:2;color:#d2e0d7}
+.cv-experience{background:var(--cream)}
+.cv-experience-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:27px}
+.cv-experience-grid article{padding:30px 32px 35px;background:var(--paper);border-top:1px solid var(--gold);min-height:240px}
+.cv-experience-index{font:italic 22px 'Cormorant Garamond',Georgia,serif;color:#a78d64}
+.cv-experience-grid h3{font-size:35px;margin:21px 0 13px}
+.cv-experience-grid p{font-size:12px;line-height:2;color:var(--sub)}
+.cv-close{background:#164b46;color:#fff}
+.cv-close-grid{padding-top:99px;padding-bottom:100px;display:grid;grid-template-columns:1.3fr .7fr;gap:12%;align-items:center}
+.cv-close h2{margin:0 0 25px;max-width:800px}
+.cv-close h2 em{color:#decbab}
+.cv-close-grid>div:first-child>p:last-child{color:#dbe6df;font-size:13px;line-height:2;max-width:595px}
+.cv-close-cta{display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.cv-secondary-link{font-size:12px;color:#f4e7d0;border-bottom:1px solid var(--gold);padding:7px 0}
+@media(max-width:1100px){.cv-hero-copy h1{font-size:clamp(58px,7vw,80px)}.cv-hero-image{min-height:470px}.cv-specialties-grid{gap:7%}.cv-hero-layout{gap:5%}}
+@media(max-width:850px){.cv-hero-layout{grid-template-columns:1fr;gap:45px;padding-top:52px}.cv-hero-copy{max-width:800px}.cv-hero-copy h1{font-size:clamp(52px,9vw,75px)}.cv-hero-image{height:560px;min-height:0;max-width:570px;width:100%;margin:0 auto}.cv-purpose-grid,.cv-specialties-grid,.cv-close-grid{grid-template-columns:1fr;gap:45px}.cv-specialties-lead{position:static}.cv-education-grid{grid-template-columns:1fr}.cv-education-card{min-height:200px}.cv-kicker{margin-bottom:24px}.cv-experience-grid{gap:15px}}
+@media(max-width:600px){.cv-hero-layout{padding-top:46px;padding-bottom:62px}.cv-hero-copy h1{font-size:clamp(51px,11vw,65px)}.cv-lead{font-size:14px}.cv-summary{font-size:12px}.cv-hero-actions{align-items:flex-start;flex-direction:column;gap:19px}.cv-hero-image{height:470px}.cv-numbers-grid{grid-template-columns:1fr;gap:0;padding-top:20px;padding-bottom:20px}.cv-numbers-grid>div,.cv-numbers-grid>div+div{border:0;border-bottom:1px solid #ffffff30;padding:19px 0}.cv-numbers-grid>div:last-child{border:0}.cv-purpose-text{padding-left:20px}.cv-purpose-text p{font-size:32px}.cv-section-head{margin-bottom:31px}.cv-education-card{padding:27px 23px}.cv-specialties-list h3{font-size:27px}.cv-experience-grid{grid-template-columns:1fr}.cv-close-grid{padding-top:70px;padding-bottom:94px}.cv-close h2{font-size:52px}.curriculum-page .footer{padding-bottom:60px}}
+@media(prefers-reduced-motion:reduce){.cv-hero-actions .btn{transition:none}}
